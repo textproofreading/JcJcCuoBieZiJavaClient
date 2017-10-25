@@ -19,6 +19,42 @@ public class JcJcPoster {
 
 
     public static void main(String... args) throws IOException {
+        
+        
+        
+        
+        HttpClient httpClient = HttpClientBuilder.create().build(); //Use this instead 
+
+        try {
+
+            HttpPost request = new HttpPost("http://117.121.10.43:8234/spellcheck/json_check/json_phrase");
+            StringEntity params =new StringEntity(  "{
+\"content\": \"腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。\",
+\"mode\": \"advanced\",
+\"biz_type\": \"show\"
+}"     );
+            request.addHeader("content-type", "application/x-www-form-urlencoded");
+            request.setEntity(params);
+            HttpResponse response = httpClient.execute(request);
+
+            //handle response here...
+
+        }catch (Exception ex) {
+
+            //handle exception here
+
+        } finally {
+            //Deprecated
+            //httpClient.getConnectionManager().shutdown(); 
+        }
+        
+        
+        
+        
+        if (true){
+            // 下面的代码失效，请使用上面的代码。
+            return ;
+        }
 
         try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
 
