@@ -13,65 +13,25 @@ import java.net.URL;
 import java.util.stream.Collectors;
 
 
+/*
+            聚精会神把错别字检测这件小事做好！
+            www.CuoBieZi.net
+
+
+
+            我们正在考虑推出基于 Kotlin 的测试代码！
+
+            欢迎关注作者微博： http://weibo.com/tianchunfeng
+
+
+ */
 public class JcJcPoster {
-    
 
     public static void main(String [] argv) throws Exception {
-
-
         String url_str = "http://117.121.10.43:8234/spellcheck/json_check/json_phrase";
         String json_data = "{    \"username\":\"tester\"   ,             \"content\": \"腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。\",                    \"mode\": \"advanced\",                    \"biz_type\": \"show\"        }"    ;
         String result = sendPost2(url_str, json_data);
         System.out.println(result);
-
-
-
-        if (true){
-            return ;
-        }
-
-
-
-
-        try {
-
-
-
-            HttpPost request = new HttpPost();
-            HttpClient httpClient = HttpClientBuilder.create().build(); //Use this instead
-
-
-                    StringEntity params =new StringEntity(  json_data );
-        request.addHeader("content-type", "application/json;charset=UTF-8");
-        request.setEntity(params);
-
-        //application/x-www-form-urlencoded
-        //"application/json;charset=UTF-8"
-
-
-            //"application/json;charset=UTF-8"
-
-
-        HttpResponse response = httpClient.execute(request);
-
-           // String body = IOUtils.toString(in, encoding);
-           // System.out.println(body);
-        //handle response here...
-
-            HttpEntity entity = response.getEntity();
-            String responseString = EntityUtils.toString(entity, "UTF-8");
-            System.out.println(responseString);
-
-
-    }catch (Exception ex) {
-
-        //handle exception here
-
-    } finally {
-        //Deprecated
-        //httpClient.getConnectionManager().shutdown();
-    }
-
 }
 
 
@@ -107,6 +67,49 @@ public class JcJcPoster {
 
 
 /**
+ *
+ *
+ *
+ *
+
+ try {
+
+
+
+ HttpPost request = new HttpPost();
+ HttpClient httpClient = HttpClientBuilder.create().build(); //Use this instead
+
+
+ StringEntity params =new StringEntity(  json_data );
+ request.addHeader("content-type", "application/json;charset=UTF-8");
+ request.setEntity(params);
+
+ //application/x-www-form-urlencoded
+ //"application/json;charset=UTF-8"
+
+
+ //"application/json;charset=UTF-8"
+
+
+ HttpResponse response = httpClient.execute(request);
+
+ // String body = IOUtils.toString(in, encoding);
+ // System.out.println(body);
+ //handle response here...
+
+ HttpEntity entity = response.getEntity();
+ String responseString = EntityUtils.toString(entity, "UTF-8");
+ System.out.println(responseString);
+
+
+ }catch (Exception ex) {
+
+ //handle exception here
+
+ } finally {
+ //Deprecated
+ //httpClient.getConnectionManager().shutdown();
+ }
 import org.apache.http.Consts;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
