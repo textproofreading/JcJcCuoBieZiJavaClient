@@ -39,9 +39,12 @@ public class JcJcPoster {
 
     public static void main(String[] argv) throws Exception {
 
-        plain_test();
+        //plain_test();
         //base64_test();
+
+        url_test();
     }
+
     public static void plain_test(){
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/json_check/json_phrase";
@@ -55,10 +58,30 @@ public class JcJcPoster {
         System.out.println(result);
     }
 
+    public static void url_test(){
+        String url_str = "";
+        url_str = "http://api.cuobiezi.net/spellcheck/url_check/json_phrase";
+
+        String web_page_url = "http://blog.csdn.net/accesine960/article/details/79154861";
+        String json_data = "{    \"username\":\"tester\"   , \"content\": \""+web_page_url+"\",   \"mode\": \"advanced\",    \"biz_type\": \"show\"   }";
+        String result = null;
+        try {
+            result = sendPost2(url_str, json_data);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(result);
+    }
+
+
+
 
     public static void base64_test(){
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/json_check/json_phrase";
+
+
+
 
         String content = "腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。";
 
