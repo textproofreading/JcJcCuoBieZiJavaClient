@@ -21,6 +21,10 @@ JcJcCuoBieZiJavaClient
     也可以考虑使用纯JavaScript版本的 API 例子：
     源代码参考下面的页面：
     http://cuobiezi.net/public/static/ckeditor4/
+    
+    2018-03-06 add spring boot 2.0 support 
+    开始支持 Spring Boot 2.0 的测试代码
+    
             
             
             
