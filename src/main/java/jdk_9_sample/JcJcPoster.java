@@ -63,9 +63,15 @@ public class JcJcPoster {
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/url_check/json_phrase";
 
+
         String web_page_url = "http://blog.csdn.net/accesine960/article/details/79154861";
-        String json_data = "{    \"username\":\"tester\"   , \"content\": \""+web_page_url+"\",   \"mode\": \"advanced\",    \"biz_type\": \"show\"   }";
+
+
+
+        String json_data = "{    \"username\":\"tester\"   , \"url\": \""+web_page_url+"\",\"content\":\"placeholder\" ,  \"mode\": \"advanced\",    \"biz_type\": \"show\"   }";
         String result = null;
+
+        System.out.println(json_data);
         try {
             result = sendPost2(url_str, json_data);
         } catch (Exception e) {
