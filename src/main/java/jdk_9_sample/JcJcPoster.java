@@ -40,18 +40,23 @@ public class JcJcPoster {
 
     public static void main(String[] argv) throws Exception {
 
-        //plain_test();
+        plain_test();
         //base64_test();
 
-        url_test();
+       // url_test();
     }
 
     public static void plain_test(){
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/json_check/json_phrase";
-        String json_data = "{    \"username\":\"tester\"   ,             \"content\": \"腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。\",                    \"mode\": \"advanced\",                    \"biz_type\": \"show\"        }";
+        //
+        String content = "腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。";
+
+
+        String json_data = "{    \"username\":\"tester\"   ,             \"content\": \""+content+"\",                    \"mode\": \"advanced\",                    \"biz_type\": \"show\"        }";
         String result = null;
         try {
+            System.out.println("begin post content to server ");
             result = sendPost2(url_str, json_data);
         } catch (Exception e) {
             e.printStackTrace();
@@ -86,9 +91,6 @@ public class JcJcPoster {
     public static void base64_test(){
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/json_check/json_phrase";
-
-
-
 
         String content = "腾讯今年中国人民共和国下半年上世纪将在微信账户钱包帐户的“九宫格”中开设快速的笑着保险入口，并上线保险产品。台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。";
 
