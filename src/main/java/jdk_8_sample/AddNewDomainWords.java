@@ -8,9 +8,18 @@ import com.alibaba.fastjson.JSONObject;
  */
 public class AddNewDomainWords {
     public static void main(String[] args) {
-        String url = "http://api.CuoBieZi.net/spellcheck/add_new_words";
+        String url = "http://"+comm_consts.APIHost+"/spellcheck/add_new_words";
 
         String sentence = "客户侧";
+
+
+
+
+        sentence = "客户侧";
+
+
+
+
         JSONObject json = new JSONObject();
         json.put("content",sentence);
         json.put("username","ctesterd");
