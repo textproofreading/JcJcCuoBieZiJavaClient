@@ -8,17 +8,19 @@ public class AddNewSensitiveWords {
     public static void main(String[] args) {
         AddNewSensitiveWords obj = new AddNewSensitiveWords();
 
-        //obj.add_new_sensitive_words();
+        obj.add_new_sensitive_words();
 
-        obj.del_sensitive_words();
+        //obj.del_sensitive_words();
 
     }
 
 
 
     public static void add_new_sensitive_words(){
-        String url = "http://api.CuoBieZi.net/spellcheck/add_sensitive_words";
-        String sentence = "手枪";
+        String url = "http://"+comm_consts.APIHost+"/spellcheck/add_sensitive_words";
+
+
+        String sentence = "它坏蛋";
         JSONObject json = new JSONObject();
         json.put("content",sentence);
         json.put("username","ctesterd");
@@ -31,7 +33,7 @@ public class AddNewSensitiveWords {
 
 
     public static void del_sensitive_words(){
-        String url = "http://api.CuoBieZi.net/spellcheck/del_sensitive_words";
+        String url = "http://"+comm_consts.APIHost+"/spellcheck/del_sensitive_words";
         String sentence = "手枪";
         JSONObject json = new JSONObject();
         json.put("content",sentence);
