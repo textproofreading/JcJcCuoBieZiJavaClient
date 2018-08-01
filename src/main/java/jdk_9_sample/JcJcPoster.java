@@ -40,10 +40,10 @@ public class JcJcPoster {
 
     public static void main(String[] argv) throws Exception {
 
-        //plain_test();
+        plain_test();
         //base64_test();
 
-        url_test();
+        //url_test();
     }
 
     public static void plain_test(){
@@ -67,9 +67,6 @@ public class JcJcPoster {
     public static void url_test(){
         String url_str = "";
         url_str = "http://api.cuobiezi.net/spellcheck/url_check/json_phrase";
-
-        url_str = "http://localhost:8234/spellcheck/url_check/json_phrase";
-
 
 
         String web_page_url = "http://blog.csdn.net/accesine960/article/details/79154861";
