@@ -13,6 +13,12 @@ public class CuoBieZiCheckerMain {
         url = "http://"+comm_consts.APIHost+"/spellcheck/json_check/json_phrase";
 
 
+        /**
+         *
+         *
+         */
+
+        System.out.println("测试的时候，不要只是输入一个词语。 要输入一段话，放到真实的文章上下文中测试， 谢谢！");
 
         String sentence = "测试文本中国人民共和国张可诺雷非科技2018年23月35号习近平国家主席李克强总理这根邮寄达老旧烟囱已走到生命进头，中国人民解军雷落科技中国特色会社主义马少黄股票她的离去让哦们很悲伤， 客户侧中华人民共和李洪志台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。";
 

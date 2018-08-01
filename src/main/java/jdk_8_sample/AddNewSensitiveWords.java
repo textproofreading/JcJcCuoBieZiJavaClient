@@ -20,7 +20,7 @@ public class AddNewSensitiveWords {
         String url = "http://"+comm_consts.APIHost+"/spellcheck/add_sensitive_words";
 
 
-        String sentence = "它坏蛋";
+        String sentence = "法轮功";
         JSONObject json = new JSONObject();
         json.put("content",sentence);
         json.put("username","ctesterd");
@@ -34,7 +34,7 @@ public class AddNewSensitiveWords {
 
     public static void del_sensitive_words(){
         String url = "http://"+comm_consts.APIHost+"/spellcheck/del_sensitive_words";
-        String sentence = "手枪";
+        String sentence = "华为云很差";
         JSONObject json = new JSONObject();
         json.put("content",sentence);
         json.put("username","ctesterd");
