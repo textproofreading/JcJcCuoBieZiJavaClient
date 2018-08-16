@@ -13,11 +13,7 @@ public class AddNewImportantWords {
         String name = "";
 
 
-        name = "李俊";
-
-
-
-
+        name = "对象存储服务";
 
 
 
