@@ -47,7 +47,7 @@ public class CuoBieZiFullTextChecker {
                 try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
 
                     List<NameValuePair> form = new ArrayList<>();
-                    form.add(new BasicNameValuePair("user_name", "tester"));
+                    form.add(new BasicNameValuePair("user_name", ""));
                     form.add(new BasicNameValuePair("content", content));
                     UrlEncodedFormEntity entity = new UrlEncodedFormEntity(form, Consts.UTF_8);
 

@@ -13,11 +13,11 @@ public class AddNewImportantWords {
         String name = "";
 
 
-        name = "对象存储服务";
+        name = "对象存储服务";  // 华为云测试
+        name = "十九大精神";  //
 
 
-
-        add_one_word(name);
+        add_one_important_word(name);
         //add_from_file();
     }
 
@@ -43,7 +43,7 @@ public class AddNewImportantWords {
                 if (str.startsWith("#")) {
                     continue;
                 }
-                add_one_word(str);
+                add_one_important_word(str);
                 System.out.println(str);
             }
 
@@ -59,8 +59,8 @@ public class AddNewImportantWords {
 
     }
 
-    public static void add_one_word(String one_word) {
-        String url = "http://api.CuoBieZi.net/spellcheck/add_important_words";
+    public static void add_one_important_word(String one_word) {
+        String url = "";
 
 
         url = "http://"+comm_consts.APIHost+"/spellcheck/add_important_words";
