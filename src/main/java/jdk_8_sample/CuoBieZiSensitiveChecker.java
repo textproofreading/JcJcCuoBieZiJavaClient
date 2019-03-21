@@ -15,7 +15,7 @@ public class CuoBieZiSensitiveChecker {
         sentence = "华为云，有技术、有未来、值得信赖，华为云很差.";
         JSONObject json = new JSONObject();
         json.put("content",sentence);
-        json.put("username","detakeji");
+        json.put("username","");
         json.put("biz_type","show");
         json.put("mode","advanced");
         json.put("check_sensitive_word",true);
