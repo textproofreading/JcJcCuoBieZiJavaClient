@@ -12,13 +12,7 @@ public class AddNewDomainWords {
 
         String sentence = "客户侧";
 
-
-
-
         sentence = "客户侧";
-
-
-
 
         JSONObject json = new JSONObject();
         json.put("content",sentence);
