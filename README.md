@@ -1,5 +1,4 @@
 # JcJcCuoBieZiJavaClient
-JcJcCuoBieZiJavaClient
 
 
 更新记录
@@ -7,6 +6,20 @@ JcJcCuoBieZiJavaClient
     2019-03-21   试用JCJC错别字接口API前，请先申请一个账号，然后联系JCJC管理员开通试用权限。
     
     2018-02-01  感谢北京航空航天大学的朋友贡献 Java API  代码！
+    
+    
+    
+    
+
+
+特别说明
+=======
+    测试的时候需要填写： username 参数，请在　www.CuoBieZi.net 注册后，联系　QQ 客服开通权限
+    
+    目前Web后台服务器和API后台服务器在两个不同的集群中，所以测试效果略有差异
+    
+    主要测试入口类：CuoBieZiCheckerMain
+    
 
 其他说明
 =======
