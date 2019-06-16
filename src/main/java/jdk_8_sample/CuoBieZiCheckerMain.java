@@ -4,9 +4,14 @@ package jdk_8_sample;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- *  我们的  api 测试接口  和  www.CuoBieZi.net 是两套系统
+ *  我们的  api 测试接口  和  www.CuoBieZi.net 是部署在　字根云　上的两套系统
  *  所以不要 api 和 www 页面 混合测试
  *  谢谢
+ *
+ *
+ *
+ *
+ *
  */
 public class CuoBieZiCheckerMain {
     public static void main(String[] args) {
@@ -18,10 +23,28 @@ public class CuoBieZiCheckerMain {
         System.out.println("测试前，请先向管理员申请测试账号 , 管理员 QQ 在JCJC错别字检测首页有 www.CuoBieZi.net  .");
 
 
+
         String sentence = "测试文本中国人民共和国2018年23月35号习近平国家主席十九精神李克强总理这根邮寄达老旧烟囱已走到生命进头，中国人民解军雷落科技中国特色会社主义马少黄股票她的离去让哦们很悲伤， 客户侧中华人民共和李洪志台万第二大金融控股公司富邦金控已与腾讯谈成合作，上述保险产品将由富邦金控旗下内地子公司富邦财险开发或引进。";
 
 
         //sentence = "感冒药并不能根治感冒，感冒药存在的意义是什么呢？";
+
+        /**
+         * 我们产品的优势：
+         *　１）　支持离线部署　，　基于　Docker
+         *  2）　引擎测试速度：１万字三秒内返回
+         *  ３）　支持自定义词汇：　付费版本　最大支持１０个自定义词汇，不影响系统技术响应指标
+         *  ４）　技术接口开放，我们愿意为合作伙伴尽最大可能开放系统API参数
+         */
+
+
+        /**
+         * 为什么华为云，浪潮，招商证券等公司会选择：JCJC错别字检测引擎：
+         *　１）　JCJC错别字检测引擎提供大量　OpenAPI
+         *  2）　不只是一个错别字检测工具，更是一个　NLP 自然语言二次开发平台
+         *  ３）　为程序员定制，贴身打造
+         */
+
 
         /**
          *  测试前，请先向管理员申请测试账号 , 管理员 QQ 在JCJC错别字检测首页有 www.CuoBieZi.net  .
@@ -43,8 +66,7 @@ public class CuoBieZiCheckerMain {
         //                "“中国共产党”写成“中华共产党”";
         //
 
-        //sentence = "自从在他们公司代理之后每天还收到各种企业服务电话骚扰。。。";
-        //sentence = "华为测试华为云专业名词测试:对像存储服务是稳定、安全、高效、易用的云存储服务，具备标准Restful API接口，可存储任意数量和形式的非结构化数据，提供99.999999999%的数据可靠性。";
+        //sentence = "华为云的测试：专业名词测试:对像存储服务是稳定、安全、高效、易用的云存储服务，具备标准Restful API接口，可存储任意数量和形式的非结构化数据，提供99.999999999%的数据可靠性。";
 
         JSONObject json = new JSONObject();
         json.put("content",sentence);//固定 参数
